@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Paloozapalooza logo fonts</title>
+<link href='https://fonts.googleapis.com/css?family=Bangers|Fontdiner+Swanky|Irish+Grover|Peralta|Spicy+Rice|Ranchers|Gorditas' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body>
+
+<table>
+ <tr ng-repeat="fontName in ['Bangers', 'Fontdiner Swanky', 'Irish Grover', 'Peralta', 'Spicy Rice', 'Rangers', 'Gorditas']">
+  <td>
+    <h1>{{ fontName }}</h1>
+  </td>
+  <td>
+   <h1 ng-style="{'font-family': fontName }" style="font-family: cursive; font-size: 96pt">Paloozapalooza!</h1>
+  </td>
+ </tr>
+</table>
+</body>
+</html>
